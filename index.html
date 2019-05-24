@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/white.css">
+    
+    <title>Canvas</title>
+</head>
+<body>
+    <div class="reveal">
+		<div class="slides">
+			<section data-markdown>
+                <textarea data-template>
+                    # Canvas
+                </textarea>
+			</section>
+			<section data-markdown>
+                <textarea data-template>
+                    ### Canvas is used:
+                    * Drawing graphs
+                    * Playing field in some browser games
+                    * Animations
+                </textarea>
+			</section>
+			<section data-markdown>
+                <textarea data-template>
+                    The canvas element was first introduced by *Apple* at
+                    WebKit for Mac OS X engine for later use in Dashboard and Safari applications.
+                </textarea>
+			</section>
+			<section data-markdown>
+                <textarea data-template>
+                    The situation with the lack of canvas in IE fixed by Google (ExplorerCanvas).
+                </textarea>
+			</section>
+			<section data-markdown>
+                <textarea data-template>
+                    The **[WHATWG](https://whatwg.org/)** group suggests using canvas as a standard for creating graphics in new generations of web applications.
+                </textarea>
+			</section>
+			<section data-markdown>
+                <textarea data-template>
+                    ### Canvas 3D.
+
+                    The Mozilla Foundation is leading a project called Canvas 3D,
+                    the goal of which is to add low-level support for graphics accelerators to display three-dimensional images through an HTML canvas element.
+                    Along with this, there are libraries implementing work with three-dimensional models, among them [three.js](https://threejs.org/examples/)
+                </textarea>
+            </section>
+			<section data-markdown>
+                <textarea data-template>
+                   ### Opportunities:
+                    * Image
+                    * Video
+                    * Text
+                    * Fill it all with a solid color
+                    * Draw outlines
+                    * Add a gradient
+                    * Box-shadow
+                    * Text-shadow
+                    * Point drawing
+                </textarea>
+            </section>
+			<section data-markdown>
+                <textarea data-template>
+                    ### Features:
+                    * Resizing the canvas, create it again
+                    * The origin is in the upper left corner
+                    * There is no 3D context
+                    * Text color can be specified like CSS
+                    * Interaction via javaScript only
+				</textarea>
+			</section>
+			<section data-markdown>
+                <textarea data-template>
+                    ## Optimization patterns:
+
+                    Browsers can optimize animations that run simultaneously.
+                    reducing the number of reflow and repaint to one, which in turn will increase the accuracy of the animation.
+                    For example, animations on JavaScript, synchronized with CSS transitions or SVG SMIL.
+                    moreover, if you are animating in a tab that is invisible, browsers will not continue to redraw,
+                    which will lead to less CPU, GPU, memory usage and as a result will reduce battery consumption in mobile devices.
+                    To do this, use requestAnimationFrame.
+                </textarea>
+			</section>
+			<section data-markdown>
+                <textarea data-template>
+                    ### Disadvantages:
+                    * Extremely loads the processor and RAM
+                    * No way to clear memory
+                    * Bad performance at high resolution
+                    * Draw each element separately
+                    * Track users in the network
+				</textarea>
+			</section>
+			<section data-markdown>
+                <textarea data-template>
+                    ### Advantages: 
+                    * Many items
+                    * Has hardware acceleration
+                    * Manipulate each pixel
+                    * Apply image processing filters
+                    * There are a lot of libraries
+				</textarea>
+			</section>
+			<section data-markdown>
+                <textarea data-template>
+                    ### libraries:
+                    * libCanvas
+                    * Processing.js
+                    * EaselJS
+                    * PlotKit
+                    * Rekapi
+                    * PhiloGL
+                    * JavaScript InfoVis Toolkit
+                    * Frame-Engine
+                </textarea>
+			</section>
+		</div>
+	</div>
+    <script src="js/reveal.js"></script>
+    <script>
+		Reveal.initialize({
+			dependencies: [
+				{ src: 'js/markdown/marked.js' },
+				{ src: 'js/markdown/markdown.js' },
+			]
+		});
+	</script>
+</body>
+</html>
